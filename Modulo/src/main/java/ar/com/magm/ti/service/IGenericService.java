@@ -3,8 +3,9 @@ package ar.com.magm.ti.service;
 import java.io.Serializable;
 import java.util.List;
 
+import ar.com.magm.ti.exception.NotFoundException;
 import ar.com.magm.ti.service.exception.ServiceException;
-import javassist.NotFoundException;
+
 
 /**
  * 

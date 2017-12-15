@@ -8,12 +8,13 @@ import java.util.List;
 import org.hibernate.SessionFactory;
 import org.junit.Test;
 
+import ar.com.magm.ti.exception.NotFoundException;
 import ar.com.magm.ti.model.Entidad;
 import ar.com.magm.ti.model.dao.hibernate.EntidadDAO;
 import ar.com.magm.ti.model.service.IEntidadService;
 import ar.com.magm.ti.model.service.impl.EntidadService;
 import ar.com.magm.ti.service.exception.ServiceException;
-import javassist.NotFoundException;
+
 
 public class TestEntidad extends BaseTest {
 	@Test

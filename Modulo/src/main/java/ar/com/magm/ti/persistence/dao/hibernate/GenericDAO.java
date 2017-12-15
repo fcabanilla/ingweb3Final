@@ -17,9 +17,10 @@ import org.jooq.impl.DSL;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import ar.com.magm.ti.exception.NotFoundException;
 import ar.com.magm.ti.persistence.dao.IGenericDAO;
 import ar.com.magm.ti.persistence.exception.PersistenceException;
-import javassist.NotFoundException;
+
 
 /**
  * 

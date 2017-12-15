@@ -5,8 +5,9 @@ import java.util.List;
 
 import org.apache.commons.dbutils.ResultSetHandler;
 
+import ar.com.magm.ti.exception.NotFoundException;
 import ar.com.magm.ti.persistence.exception.PersistenceException;
-import javassist.NotFoundException;
+
 /**
  * 
  * @author magm
