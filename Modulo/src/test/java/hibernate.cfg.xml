@@ -30,7 +30,6 @@
 		<property name="hbm2ddl.auto">update</property>
 		<!-- update validate -->
 		<mapping class="ar.com.magm.ti.model.Entidad" />
-		<mapping class="ar.com.magm.ti.model.Persona" />
 
 
 

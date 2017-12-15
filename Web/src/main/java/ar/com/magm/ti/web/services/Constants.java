@@ -17,6 +17,7 @@ public final class Constants {
 	public static final String URL_OFF = "/off";
 	
 	public static final String URL_DENY = "/deny";
+	public static final String URL_LOGINSUCCESS = "/loginsuccess";
 	
 	public static final String URL_ENTIDAD= URL_BASE + "/entidades";
 	
