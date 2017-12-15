@@ -22,5 +22,7 @@ public final class Constants {
 	public static final String URL_ENTIDAD= URL_BASE + "/entidades";
 	
 	public static final String URL_ARCHIVOS= URL_BASE + "/archivos";
+	public static final String URL_CORE= URL_BASE + "/core";
+	
 	
 }

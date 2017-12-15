@@ -1,10 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="magm">
+
+
 <title>Ing Web 3</title>
+<link rel="icon" href="images/favicon.png">
+<link href="js/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="js/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="js/Hover/css/hover-min.css" rel="stylesheet">
+
+<link href="js/select2/select2-bootstrap.css" rel="stylesheet">
+<link href="js/select2/select2.css" rel="stylesheet">
+<link href="js/angular-ui-select/dist/select.min.css" rel="stylesheet">
+
+<link href="js/selectize/dist/css/selectize.bootstrap3.css" rel="stylesheet">
+<link href="js/selectize/dist/css/selectize.css" rel="stylesheet">
+<link href="js/angular-ui-select/dist/select.min.css" rel="stylesheet">
+
+<link href="js/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="js/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet">
+<link href="js/ng-tags-input/ng-tags-input.min.css" rel="stylesheet">
+<link href="js/ng-tags-input/ng-tags-input.bootstrap.min.css" rel="stylesheet">
+<link href="js/ng-inline-edit/dist/ng-inline-edit.min.css" rel="stylesheet">
+
+<link href="js/adapt-strap/dist/adapt-strap.min.css" rel="stylesheet">
+
+
+<script type="text/javascript" src="js/angular/angular.min.js"></script>
+<script type="text/javascript" src="js/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angular-animate/angular-animate.min.js"></script>
+<script type="text/javascript" src="js/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="js/angular-sanitize/angular-sanitize.min.js"></script>
+
+<script type="text/javascript" src="js/select2/select2.min.js"></script>
+<script type="text/javascript" src="js/selectize/dist/js/selectize.min.js"></script>
+<script type="text/javascript" src="js/angular-ui-select/dist/select.min.js"></script>
+<script type="text/javascript" src="js/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script type="text/javascript" src="js/ng-tags-input/ng-tags-input.min.js"></script>
+
+<script type="text/javascript" src="js/angular-utils-pagination/dirPagination.js"></script>
+
+<script type="text/javascript" src="js/spin.js/spin.js"></script>
+<script type="text/javascript" src="js/angular-spinner/angular-spinner.min.js"></script>
+<script type="text/javascript" src="js/angular-loading-spinner/angular-loading-spinner.js"></script>
+
+
+<script type="text/javascript" src="js/ng-inline-edit/dist/ng-inline-edit.min.js"></script>
+
+<script type="text/javascript" src="js/adapt-strap/dist/adapt-strap.min.js"></script>
+<script type="text/javascript" src="js/adapt-strap/dist/adapt-strap.tpl.min.js"></script>
+
+<script src="js/ng-file-upload/ng-file-upload-shim.min.js"></script>
+<script src="js/ng-file-upload/ng-file-upload.min.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="config/interceptors.js"></script>
+<script type="text/javascript" src="config/routes.js"></script>
+<script type="text/javascript" src="controllers/main.controller.js"></script>
+<script type="text/javascript" src="controllers/login.form.controller.js"></script>
+<script type="text/javascript" src="controllers/entidades.controller.js"></script>
+<script type="text/javascript" src="controllers/archivos.controller.js"></script>
+
+<script type="text/javascript" src="services/core.service.js"></script>
+<script type="text/javascript" src="services/entidades.service.js"></script>
+<script type="text/javascript" src="services/archivos.service.js"></script>
+
+<style type="text/css">
+.ng-inline-edit__input {
+	padding: 0 3px;
+}
+
+.ng-inline-edit__text {
+	padding: 2px 3px;
+	font-weight: bold;
+}
+
+.ng-inline-edit__text:hover {
+	background: #ff0;
+	border-radius: 4px;
+}
+
+.ng-inline-edit__text--placeholder {
+	color: #999;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.col-centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.vertical-align {
+	display: flex;
+	flex-direction: row;
+}
+
+.vertical-align>[class^="col-"], .vertical-align>[class*=" col-"] {
+	display: flex;
+	align-items: center; /* Align the flex-items vertically */
+	justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+
+.iu-select-bootstrap {
+	width: 100% !important;
+}
+
+.highlight {
+	background: yellow
+}
+.puntero {
+	cursor: pointer;
+	cursor: hand;
+}
+.azul {
+	color: blue;
+}
+.espacio10 {
+	padding-left: 10px;
+}
+.espacio20 {
+	padding-left: 20px;
+}
+body {
+	background-image:  url("images/fondo.jpg");
+}
+
+</style>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-	Contenido estático
+
+<body ng-app="ti">
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" ng-click="relocate('/')" href="#">Ingeniería Web 3</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ng-class="option=='entidades' ? 'active' : ''" ng-click="relocate('entidades')"><a href="#">Entidades <span class="sr-only">(current)</span></a></li>
+        <li ng-class="option=='archivos' ? 'active' : ''" ng-click="relocate('archivos')"><a href="#">Archivos <span class="sr-only">(current)</span></a></li>
+      </ul>
+       <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	        <span class="azul espacio20">{{titulo}}</span>
+	      </a>
+      </div>
+      <ul ng-hide="!authenticated" class="nav navbar-nav navbar-right">
+        <li><a ng-click="logout()" href="#">({{user.name}}) Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div ng-view=""></div>
 </body>
+
 </html>
